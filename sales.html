@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sales History</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sales History</h1>
+      <nav>
+        <a href="index.html">Back to Dashboard</a>
+      </nav>
+    </header>
+    <main>
+      <section id="sales-summary">
+        <h2>Summary</h2>
+        <p>Total Revenue: <strong id="total-revenue">$0.00</strong></p>
+        <p>Total Sales: <strong id="total-sales-count">0</strong></p>
+      </section>
+
+      <section id="sales-list-container">
+        <h2>All Transactions</h2>
+        <div id="sales-list">
+          <!-- Sales records will be inserted here by JavaScript -->
+        </div>
+      </section>
+    </main>
+    <script src="sales.js"></script>
+  </body>
+</html>
