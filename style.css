@@ -154,7 +154,7 @@ form input {
 }
 
 .delete-sale-btn {
-    background-color: #dc3545; /* Red */
+    background-color: #dc3545;
 }
 
 .sale-record ul {
@@ -172,7 +172,70 @@ form input {
 }
 
 .edit-btn {
-    background-color: #007bff; /* Blue */
+    background-color: #007bff; 
 }
 
-.delete-btn { background-color: #dc3545; /* Red */ }
+.delete-btn {
+    background-color: #dc3545; 
+ }
+
+/* Dashboard Specific Styles */
+.dashboard-main {
+    padding: 0;
+}
+
+#dashboard-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.summary-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    text-align: center;
+}
+
+.summary-card h3 {
+    margin-top: 0;
+    color: #005a9c;
+}
+
+.summary-card p {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.dashboard-nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.nav-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.nav-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.nav-card i {
+    font-size: 3em;
+    color: #007bff;
+    margin-bottom: 15px;
+}
