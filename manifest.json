@@ -1,0 +1,17 @@
+{
+  "name": "Retail App",
+  "short_name": "RetailApp",
+  "description": "A simple point of sale, inventory, and sales tracking application.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#333",
+  "icons": [
+    {
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNdNe6M2wE9N0Q3iGBZZHkGa5sA4XGhOi6DQ&s",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

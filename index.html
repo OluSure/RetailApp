@@ -10,9 +10,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="manifest" href="manifest.json" />
     <link rel="stylesheet" href="style.css" />
-     <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNdNe6M2wE9N0Q3iGBZZHkGa5sA4XGhOi6DQ&s" />
-
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNdNe6M2wE9N0Q3iGBZZHkGa5sA4XGhOi6DQ&s"
+    />
     <title>Retail App Dashboard</title>
   </head>
   <body>
@@ -30,7 +34,7 @@
           <p id="total-sales">0</p>
         </div>
         <div class="summary-card">
-          <h3>Products in Inventory</h3>
+          <h3>Total Products</h3>
           <p id="product-count">0</p>
         </div>
         <div class="summary-card">
@@ -38,7 +42,6 @@
           <p id="total-stock">0</p>
         </div>
       </section>
-
       <nav class="dashboard-nav">
         <a href="receipt.html" class="nav-card">
           <i class="fas fa-receipt"></i>
@@ -58,10 +61,27 @@
       </nav>
     </main>
     <footer>
-      <p style="text-align: center;">
-        Retail App. &copy; 2025 By Tobi Adeoye. All rights reserved.
+      <p style="text-align: center">
+        Retail App. &copy; 2025 By <a href="https://linkedin.com/in/thetobiadeoye">Tobi Adeoye</a>. All rights reserved.
       </p>
     </footer>
     <script src="dashboard.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/sw.js")
+            .then((registration) =>
+              console.log(
+                "ServiceWorker registration successful with scope: ",
+                registration.scope
+              )
+            )
+            .catch((err) =>
+              console.log("ServiceWorker registration failed: ", err)
+            );
+        });
+      }
+    </script>
   </body>
 </html>

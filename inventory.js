@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             row.innerHTML = `
                 <td>${product.id}</td>
                 <td>${product.name}</td>
-                <td>$${product.price.toFixed(2)}</td>
+                <td>₦${product.price.toFixed(2)}</td>
                 <td>${product.stock}</td>
                 <td>
                     <button class="action-btn edit-btn" data-id="${product.id}">Edit</button>
