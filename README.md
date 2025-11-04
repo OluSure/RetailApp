@@ -5,5 +5,6 @@ This is a retail inventory management system that allows you to manage your inve
 - Track sales and inventory levels
 - Generate reports
 - User-friendly interface
+- Offline usage
 ## Technologies Used
 - HTML, CSS, JavaScript
